@@ -1,19 +1,17 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
  * main - Prints the alphabet in lowercase
- *
- * Return: 0 if success
- * */
+(*
+ * Return: 0 on success
+ */
 int main(void)
 {
-	char d = 'a';
+	char c = 'a';
 
-	while (d <= 'z')
+	while (c <= 'z')
 	{
-	putchar(d);
-	d++;
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 	return (0);
