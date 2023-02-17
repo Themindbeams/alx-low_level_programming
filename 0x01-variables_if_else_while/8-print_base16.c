@@ -19,6 +19,6 @@ int main(void)
 		putchar(i);
 		i++;
 	}
-	pitchar('\n');
+	putchar('\n');
 	return (0);
 }
