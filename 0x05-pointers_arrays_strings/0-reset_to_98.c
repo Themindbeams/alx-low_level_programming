@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98 - takes pointer and update the value to print
+ * reset_to_98 - takes pointer and updates the value it points to
  * @q: pointer
  * Return: void
  */
