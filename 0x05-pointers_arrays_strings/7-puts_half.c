@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * put_half - prints half of a string
+ * puts_half - prints half of a string
  * @str: input string
  * Retur: no return
  */
@@ -12,14 +12,14 @@ void puts_half(char *str)
 
 	while (count >= 0)
 	{
-		if (str[count] == '\0')
-			break;
-		count++;
+	if (str[count] == '\0')
+	break;
+	count++;
 	}
 	if (count % 2 == 1)
-		i = count / 2;
+	i = count / 2;
 	else
-		i =(count - 1) / 2;
+	i =(count - 1) / 2;
 
 	for (i++; i < count; i++)
 		_putchar(str[i]);
