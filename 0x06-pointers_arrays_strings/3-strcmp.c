@@ -1,33 +1,23 @@
 #include "main.h"
 
 /**
-  * _strncpy - Copy a string
-  * @dest: The destination value
-  * @src: The source value
-  * @n: The copy limit
-  *
-  * Return: char value
-  */
-char *_strncpy(char *dest, char *src, int n)
+ * _strcmp - compare
+ * @s1 : pointer to chsr params
+ * @s2 : pointer to char params
+ * Return: *dest
+ */
+
+int _strcmp(char *s1, char *s2)
 {
-	int a = 0, b = 0;
+	int i;
+	int R;
 
-	while (src[b])
+	i = 0;
+
+	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0'))
 	{
-	b++;
+		i++;
 	}
-
-	while (a < n && src[a])
-	{
-	dest[a] = src[a];
-	a++;
-	}
-
-	while (a < n)
-	{
-	dest[a] = '\0';
-	a++;
-	}
-
-	return (dest);
+	R = s1[i] - s2[i];
+	return(R);
 }
