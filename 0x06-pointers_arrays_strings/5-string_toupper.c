@@ -1,25 +1,20 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * *cap_string - this is awesome
- * @s: pointer to char params
+ * string_toupper - lower to upper
+ * @b: pointer to char params
  *
- * Return: *s
+ * Return: *b
  */
 
-char *cap_string(char *s)
+char *string_toupper(char *b)
 {
-	int i, j;
-	char delimeters[] = " \t\n,;.!?\"(){}";
+	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; b[i] != '\0'; i++)
 	{
-	if (s[0] >= 97 && s[0] <= 122)
-		s[0] = s[0] - 32;
-			for (j = 0; delimeters[j] != '\0'; j++)
-				if (s[i] == delimeters[j] && s[i + 1] >= 97 && s[i + 1] <= 122)
-					s[i + 1] = s[i + 1] - 32;
+		if (b[i] >= 'a' && b[i] <= 'z')
+			b[i] -= 32;
 	}
-	return (s);
+	return (b);
 }
